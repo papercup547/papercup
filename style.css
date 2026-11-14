@@ -73,23 +73,24 @@ a {
 }
 
 .section-label {
-  display: flex; /* ← БЫЛО: inline-flex, СТАЛО: flex */
-  align-items: center;
-  gap: 0.6rem;
+  display: block; /* ← было inline-flex или flex */
+  width: 100%; /* ← добавить */
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 1rem;
-  width: fit-content; /* ← ДОБАВИТЬ: чтобы не растягивался на всю ширину */
 }
 
 .section-label::before {
   content: "";
+  display: inline-block; /* ← добавить */
   width: 2.2rem;
   height: 2px;
   background: var(--accent);
+  margin-right: 0.6rem; /* ← добавить отступ от линии до текста */
+  vertical-align: middle; /* ← добавить */
 }
 
 .section-title {
@@ -99,7 +100,9 @@ a {
   line-height: 1.15;
   letter-spacing: -0.01em;
   margin-bottom: 1rem;
-  margin-top: 0; /* ← ДОБАВИТЬ: убрать возможный отрицательный margin */
+  margin-top: 0;
+  clear: both; /* ← добавить */
+  display: block; /* ← добавить */
 }
 
 .section-lead {

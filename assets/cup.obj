@@ -1,6 +1,6 @@
 # Blender 5.2.2 LTS
 # www.blender.org
-mtllib Стакан.mtl
+mtllib cup.mtl
 o Цилиндр.002
 v -0.810447 -0.247284 -0.819327
 v -0.810447 4.696636 -1.502377

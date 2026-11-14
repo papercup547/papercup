@@ -73,7 +73,7 @@ a {
 }
 
 .section-label {
-  display: inline-flex;
+  display: flex; /* ← БЫЛО: inline-flex, СТАЛО: flex */
   align-items: center;
   gap: 0.6rem;
   font-size: 0.78rem;
@@ -82,6 +82,7 @@ a {
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 1rem;
+  width: fit-content; /* ← ДОБАВИТЬ: чтобы не растягивался на всю ширину */
 }
 
 .section-label::before {

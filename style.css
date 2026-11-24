@@ -874,5 +874,41 @@ a {
     grid-template-columns: 1fr;
   }
 }
+/* ---------- Бейдж автора в шапке ---------- */
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.author-badge {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+/* ---------- Фотографии в карточках видов стаканов ---------- */
+.type-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 6px);
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--border);
+  background: #101014;
+}
+
+@media (max-width: 480px) {
+  .author-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
 
 

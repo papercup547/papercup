@@ -849,8 +849,9 @@ a {
 .photos-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
+  gap: 1.2rem;
+  max-width: 780px;            /* ограничиваем общую ширину блока, чтобы фото были компактнее */
+  margin: 2.2rem auto 0;       /* выравниваем по центру */
 }
 
 .photo-box {
@@ -862,14 +863,22 @@ a {
 
 .photo-box img {
   width: 100%;
-  height: 320px;
+  height: 200px;               /* уменьшили высоту с 320px до 200px */
   object-fit: cover;
   display: block;
+  filter: brightness(0.85);    /* слегка приглушаем яркость, чтобы фото не "кричали" на тёмном фоне */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.photo-box:hover img {
+  filter: brightness(1);       /* при наведении возвращаем полную яркость */
+  transform: scale(1.02);
 }
 
 @media (max-width: 640px) {
   .photos-two {
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
 /* ---------- Бейдж автора в шапке ---------- */

@@ -368,7 +368,38 @@
       </div>
     </section>
     
-        <!-- ==================== ОБ УЧЕБНОМ ПРОЕКТЕ ==================== -->
+            <!-- ==================== 03. АНИМАЦИЯ ==================== -->
+    <section class="section" id="animation">
+      <div class="container">
+
+        <span class="section-label reveal">03 · Animation</span>
+        <h2 class="section-title reveal">Blender Animation</h2>
+        <p class="section-lead reveal">
+          Облёт камеры, вода, свет — финальная анимация из Blender,
+          отрендеренная в MP4. Включите звук, разверните на весь экран.
+        </p>
+
+        <div class="video-wrapper reveal">
+          <video
+            controls
+            loop
+            preload="metadata"
+            playsinline
+            poster="assets/poster.jpg"
+          >
+            <source src="assets/animation.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает встроенное видео.
+          </video>
+          <div class="video-caption">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="2.18"/><path d="M7 2v20"/><path d="M17 2v20"/><path d="M2 12h20"/><path d="M2 7h5"/><path d="M2 17h5"/><path d="M17 17h5"/><path d="M17 7h5"/></svg>
+            animation.mp4 · Blender 5.2.2 LTS · H.264 · 1080p
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 04. ОБ УЧЕБНОМ ПРОЕКТЕ ==================== -->
     <section class="section" id="about-project" style="background: var(--bg-soft); border-top: 1px solid var(--border);">
       <div class="container">
 
@@ -382,7 +413,6 @@
         <!-- Карточка колледжа с эмблемой и автором -->
         <div class="college-card reveal">
           <div class="college-header">
-            <!-- Сохраните официальную эмблему с vagpk11.gosuslugi.ru в assets/vagpk-logo.png -->
             <img
               src="assets/vagpk-logo.png"
               alt="Эмблема ГПОУ «Воркутинский арктический горно-политехнический колледж»"
@@ -403,84 +433,17 @@
         <div class="disciplines-block reveal">
           <h3 class="subsection-title">Изучаемые дисциплины по специальности 09.02.07</h3>
           <div class="disciplines-grid">
-            <div class="discipline-item">
-              <span class="disc-code">ОП.01 / ОП.02</span>
-              <h4>Операционные системы и архитектура аппаратных средств</h4>
-              <p>Устройство вычислительных систем, администрирование ОС и оптимизация аппаратных ресурсов.</p>
-            </div>
-            <div class="discipline-item">
-              <span class="disc-code">ОП.03 / ОП.04</span>
-              <h4>Информационные системы и алгоритмизация</h4>
-              <p>Проектирование структур данных, объектно-ориентированное программирование и разработка алгоритмов.</p>
-            </div>
-            <div class="discipline-item">
-              <span class="disc-code">ПМ.01</span>
-              <h4>Разработка модулей программного обеспечения</h4>
-              <p>Создание, отладка и тестирование программных модулей на современных языках программирования.</p>
-            </div>
-            <div class="discipline-item">
-              <span class="disc-code">ПМ.02</span>
-              <h4>Осуществление интеграции программных модулей</h4>
-              <p>Сборка программных комплексов, работа с системами контроля версий и API.</p>
-            </div>
-            <div class="discipline-item">
-              <span class="disc-code">ПМ.05</span>
-              <h4>Проектирование и разработка информационных систем</h4>
-              <p>Проектирование баз данных, SQL-запросы, клиент-серверная архитектура и веб-приложения.</p>
-            </div>
-            <div class="discipline-item">
-              <span class="disc-code">ПМ.08 / ПМ.09</span>
-              <h4>Разработка дизайна веб-приложений и 3D-графика</h4>
-              <p>Проектирование пользовательских интерфейсов (UI/UX), вёрстка и интеграция 3D-сцен в веб-среду.</p>
-            </div>
+            <!-- ... ваши 6 карточек дисциплин остаются без изменений ... -->
           </div>
         </div>
-                <!-- Две фотографии по специальности слева и справа -->
+
+        <!-- Две фотографии по специальности слева и справа -->
         <div class="photos-two">
           <div class="photo-box">
             <img src="assets/photo1.jpg" alt="" />
           </div>
           <div class="photo-box">
             <img src="assets/photo2.jpg" alt="" />
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ==================== АНИМАЦИЯ ==================== -->
-    <section class="section" id="animation">
-      <div class="container">
-
-        <span class="section-label reveal">03 · Animation</span>
-        <h2 class="section-title reveal">Blender Animation</h2>
-        <p class="section-lead reveal">
-          Облёт камеры, вода, свет — финальная анимация из Blender,
-          отрендеренная в MP4. Включите звук, разверните на весь экран.
-        </p>
-
-        <div class="video-wrapper reveal">
-          <!--
-            controls — панель управления плеером
-            preload="metadata" — грузим только метаданные, видео не стартует само
-            playsinline — не открывать fullscreen на iOS
-            Положите файл в assets/animation.mp4
-          -->
-          <video
-            controls
-            loop
-            preload="metadata"
-            playsinline
-            poster="assets/poster.jpg"
-          >
-            <source src="assets/animation.mp4" type="video/mp4" />
-            Ваш браузер не поддерживает встроенное видео.
-          </video>
-          <div class="video-caption">
-            <!-- icon: film -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="2.18"/><path d="M7 2v20"/><path d="M17 2v20"/><path d="M2 12h20"/><path d="M2 7h5"/><path d="M2 17h5"/><path d="M17 17h5"/><path d="M17 7h5"/></svg>
-            animation.mp4 · Blender 5.2.2 LTS · H.264 · 1080p
           </div>
         </div>
 

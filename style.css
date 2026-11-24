@@ -506,9 +506,8 @@ a {
   font-family: var(--font-display);
   color: var(--accent);
   font-weight: 700;
-  font-size: 0.88rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
   padding-top: 0.2rem;
   white-space: nowrap;
 }

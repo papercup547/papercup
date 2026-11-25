@@ -918,6 +918,14 @@ a {
     padding: 0.2rem 0.6rem;
   }
 }
+.logo-compact-img {
+  height: 30px; /* можно поставить 28px или 34px по вкусу */
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+}
 
 
 

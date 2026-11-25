@@ -938,8 +938,8 @@ a {
   display: inline-flex;
   align-items: center;
   height: 46px;
-  width: 175px;              /* ширина под горизонтальный логотип */
-  overflow: hidden;          /* обрезаем лишние чёрные поля сверху и снизу */
+  width: 215px;              /* расширили со 175px до 215px */
+  overflow: hidden;
   border-radius: 8px;
   flex-shrink: 0;
 }
@@ -947,9 +947,9 @@ a {
 .logo-brand-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;         /* заполняем область по ширине */
-  transform: scale(1.32);    /* приближаем сам знак и надпись внутри квадрата */
-  mix-blend-mode: lighten;   /* растворяем чёрный фон картинки в шапке сайта */
+  object-fit: cover;
+  transform: scale(1.18);    /* уменьшили масштаб с 1.32 до 1.18, чтобы края не резались */
+  mix-blend-mode: lighten;
 }
 
 .author-badge {
